@@ -10,16 +10,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Meteo App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -28,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -38,20 +40,22 @@
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
             <div class="weather-app-temperature">12</div>
-            <div class="weatehr-app-unit">°C</div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
       </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/Daiyadai" target="_blank">Daiya Dai</a> is
-      open source on
-      <a href="https://github.com/Daiyadai/weather" target="_blank">Github</a>
-      and hosted on
-      <a href="https://weatherforecastdaiya.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Daiyadai" target="_blank">Daiya Dai</a> is
+        open source on
+        <a href="https://github.com/Daiyadai/weather" target="_blank">Github</a>
+        and hosted on
+        <a href="https://weatherforecastdaiya.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
